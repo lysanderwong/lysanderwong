@@ -1,0 +1,283 @@
+
+/* FONTS */
+.inconsolata-semiexpanded {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 112.5;
+}
+
+/* HEADER & FOOTER*/
+
+.header-paragraph {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 1.3rem;
+  max-width: 600px;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+.footer-text {
+  display: block;
+  text-align: center;
+}
+
+/* NAV */
+.nav {
+  height: 100%;
+  width: 12rem; 
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 1.3rem;
+  padding-left: 1.5rem;
+}
+
+.nav a {
+  display: block; 
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.nav .projects a {
+  padding-left: 10px;
+}
+
+.nav a:active {
+  text-decoration: none;
+}
+
+.nav .navparent {
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  line-height: 1;
+}
+
+.nav-image {
+  width: 7rem;
+  display: block;
+  margin-left: 1rem; 
+}
+
+.nav-icons {
+  position: relative;
+  float: left; 
+  margin: 0px 3px;
+}
+
+.nav a.icon {
+  display: none;
+}
+
+/* LINKS */
+a {
+  color: black;
+}
+
+a.underline {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.arrow-link {
+	text-decoration: none;
+}
+
+a:hover {
+	color: orangered;
+}
+
+/* HEADINGS & ELEMENTS */
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+p {
+  line-height: 1.45;
+}
+
+h3 {
+  font-weight: 600px;
+}
+
+hr {
+  display: block;
+  border-color: black;
+  border-top: 1px;
+}
+
+li {
+  line-height: 1.45;
+}
+
+.linebreak {
+  max-width: 60rem;
+  margin-left: 0px;
+}
+
+ul.awards {
+  line-height: 1.45;
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.year {
+  font-size: 0.7rem;
+  font-weight: 700px;
+  color: rgb(140, 156, 106);
+}
+
+/* MAIN */
+
+.main {
+  margin-left: 14rem;
+  margin-right: 1rem;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  font-size: 0.9rem;
+  background-color: rgb(225, 248, 174);
+}
+
+.column {
+  float: left;
+}
+
+.film-page-column {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftcontent {
+  width: 40%;
+  max-width: 300px;
+}
+
+.rightcontent {
+  width: 60%;
+  max-width: 600px;
+  /* padding-top: 10px; */
+}
+
+.bio-pic {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  padding: 20px 20px 20px 10px; 
+}
+
+.film-stills-main {
+  width: 100%;
+  max-width: 600px;
+  display: block; 
+}
+
+.film-page {
+  display: block;
+}
+
+.leftcontent-film {
+  width: 50%;
+  max-width: 600px;
+}
+
+.rightcontent-film {
+  width: 45%;
+  max-width: 500px;
+  margin-left: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+li.selection-list {
+  padding-bottom: 0.6em;
+}
+
+
+@media screen and (max-width: 1060px) {
+  .film-page-column {
+    width: 100%; 
+  }
+  .rightcontent-film {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 0px; 
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+  .leftcontent {
+    max-width: none; 
+  }
+  .bio-pic {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .nav {
+    width: 100%;
+    height: auto; 
+    position: relative;
+    margin-top: -1rem;
+  }
+  .nav a {
+    float: none;
+    text-align: center;
+  }
+  #navLinks {
+    display: none;
+    margin-top: 45px;
+  }
+  .nav .navparent {
+    display: none;
+  }   
+  .nav-image {
+    display: none;
+  }
+  .main {
+    margin-left: 1rem;
+  }
+  li {
+    margin-bottom: 7px;
+  }
+  .social-icons a {
+    width: 0.4rem; 
+    /* float: left; */
+    display: inline-block;
+    padding: 0 0.4rem;
+  }
+  #navLinks div {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  .nav a.icon {
+    display: block;
+    float: left; 
+  }
+}
